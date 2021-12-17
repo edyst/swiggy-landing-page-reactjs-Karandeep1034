@@ -1,22 +1,24 @@
-import React from 'react'
-import Herosection from './components/Herosection/hero'
-import Features from './components/Features/features'
-import Restaurants from './components/Restaurants/restaurants'
-import Footer from './components/Footer/footer'
-
+import React from 'react';
 import './App.css';
-import './components/FontAwesome'
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import Footer from './Components/Footer/footer';
+import Order from './Components/Order/order';
+import Feature from './Components/Features/feature';
+import Header from './Components/Header/header';
+
 
 
 function App() {
+
   return (
-    <div className="body">
-      <Herosection />
-      <Features />
-      <Restaurants />
-      <Footer />
+    <div className="App">
+        <Header/>
+        <Feature/>
+        <Order/>
+        <Footer/>
     </div>
-  )
+  );
 }
 
 export default App;
